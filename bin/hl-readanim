@@ -44,7 +44,7 @@ for my $byte ( split( /,/, $bytes ) ) {
 	}
 	push( @cache, hex($byte) );
 	if ( @cache == 5 ) {
-		for my $i ( 1 .. 7 ) {
+		for my $i ( 0 .. 6 ) {
 			for my $byte (@cache) {
 				if ( $byte & ( 1 << $i ) ) {
 					print 'X';
