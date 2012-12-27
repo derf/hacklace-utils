@@ -47,7 +47,7 @@ for my $infile (@infiles) {
 	print $fh "// frame $frameno\n";
 	$frameno++;
 }
-print $fh "\tEND_OF_DATA\n};";
+print $fh "\tEND_OF_DATA\n};\n";
 
 close($fh);
 
